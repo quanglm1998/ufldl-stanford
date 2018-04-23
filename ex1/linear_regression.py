@@ -24,7 +24,7 @@ class LinearRegression:
 
     def gradientDescent(self):
         for i in range(self.numIter):
-            print("Iteration:", i, end='\r')
+            # print("Iteration:", i, end='\r')
             self.theta -= (self.alpha / self.m) * (self.X.T.dot(self.X.dot(self.theta) - self.y))  
 
     def getNormalize(self, X):
